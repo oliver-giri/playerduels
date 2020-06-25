@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign In - Playerduels</title>
+</head>
+<body>
+    <h1>Sign In - Playerduels</h1>
+    <br>
+    <br>
+    <br>
+    <form method="post" action="/polls/">
+        {% csrf_token %}
+        {{ form.username }}
+        <br>
+        <br>
+        <br>
+        <br>
+        {% csrf_token %}
+        {{ form.password }}
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <button type="submit">Continue ></button>
+    </form>
+</body>
+</html>
+
+<style>
+    body {
+        text-align: center;
+    }
+
+    form {
+        width: 30%;
+        height: 100%;
+        border: 2px solid black;
+    }
+
+    h1 {
+        font-family: "Fira Code Light", fantasy;
+        color: blue;
+    }
+
+    input {
+        width: 25%;
+        border: 3px solid black;
+    }
+
+    button {
+        width: 20%;
+        height: 20%;
+        color: white;
+        background-color: green;
+    }
+</style>
